@@ -1,0 +1,106 @@
+.what-to-eat {
+  padding-bottom: 0;
+
+  & .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &__headline {
+      font-size: 1em;
+    }
+
+    &__notifications {
+      position: relative;
+      padding: 1em;
+      margin-right: 0.5em;
+
+      &__icon-bell {
+        color: $color-grey;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  & .search {
+    position: relative;
+    border-bottom: 2px solid white;
+
+    &__input {
+      width: 100%;
+      background-color: $color-light;
+      border-radius: 0.5rem;
+      border: 1px solid #cccccc;
+      padding: 1em 3.5em;
+      font-size: 1em;
+
+      &::placeholder {
+        color: $color-grey-light;
+      }
+    }
+
+    &__icon-search,
+    &__filter {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__icon-search {
+      font-size: 1.5em;
+      left: 0.5em;
+    }
+
+    &__filter {
+      padding: 0.5em;
+      right: 1em;
+
+      &__icon-menu {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  & .categories {
+    margin: 0 -1em;
+
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      &__item {
+        display: inline-block;
+        flex: 0 0 auto;
+        padding: 1em;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    &__card {
+      padding: 0.5em;
+      width: 3.5em;
+      height: 3.5em;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 80%;
+      height: 80%;
+    }
+
+    &__name {
+      color: $color-grey;
+      font-weight: 600;
+      padding-top: 0.75em;
+    }
+  }
+}

@@ -1,0 +1,302 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #2d2d2d;
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1.5;
+  background-color: #fafafa;
+  -webkit-font-smoothing: subpixel-antialiased;
+  width: 100%; }
+
+a {
+  color: #fc4041;
+  font-weight: 300;
+  line-height: 1;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  pointer-events: none; }
+
+li {
+  list-style: none; }
+
+span {
+  font-family: "Nunito", sans-serif; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?7ug5n4");
+  src: url("fonts/icomoon.eot?7ug5n4#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?7ug5n4") format("truetype"), url("fonts/icomoon.woff?7ug5n4") format("woff"), url("fonts/icomoon.svg?7ug5n4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #fc4041;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-near_me:before {
+  content: "\e907"; }
+
+.icon-star:before {
+  content: "\e908"; }
+
+.icon-bell:before {
+  content: "\e900"; }
+
+.icon-crosshair:before {
+  content: "\e901"; }
+
+.icon-home:before {
+  content: "\e902"; }
+
+.icon-menu:before {
+  content: "\e903"; }
+
+.icon-search:before {
+  content: "\e904"; }
+
+.icon-shopping-bag:before {
+  content: "\e905"; }
+
+.icon-user:before {
+  content: "\e906"; }
+
+.icon-heart:before {
+  content: "\e9da"; }
+
+section {
+  padding: 1em; }
+
+.section-title {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-bottom: 0.5em; }
+
+.popular-food__wrapper {
+  margin: 0 -1em;
+  padding: 0 0.5em;
+  display: flex; }
+
+.popular-food__card {
+  margin: 0 0.5em;
+  flex: 1; }
+
+.best-food__card {
+  margin-bottom: 2em; }
+
+.badge {
+  font-size: 0.6em;
+  line-height: 1;
+  text-align: center;
+  padding: 0.5em;
+  background-color: #fc4041;
+  border-radius: 1.5rem;
+  color: #fafafa;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em; }
+
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer; }
+
+.card {
+  border-radius: 0.5rem;
+  background-color: white;
+  position: relative; }
+  .card::before {
+    content: "";
+    display: block;
+    background-color: #fc4041;
+    filter: blur(1.5rem);
+    opacity: 0.9;
+    z-index: -1;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .card__icon-heart, .card__icon-near_me {
+    position: absolute;
+    top: 0.3em;
+    right: 0.3em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5em;
+    box-shadow: 0 0.25em 0.25em rgba(252, 65, 64, 0.15); }
+  .card__image {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 10em;
+    object-fit: cover; }
+  .card__description {
+    padding: 0.5em;
+    position: relative; }
+    .card__description__title {
+      font-weight: 600;
+      line-height: 1; }
+    .card__description__producer {
+      font-size: 0.8em;
+      color: #bbbbbb;
+      line-height: 1; }
+    .card__description__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.8em; }
+    .card__description__ratings {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .card__description__ratings__result, .card__description__ratings__count {
+        color: #bbbbbb; }
+      .card__description__ratings__stars {
+        font-size: 0.9em;
+        margin: 0 0.5em; }
+        .card__description__ratings__stars__icon {
+          width: 0.8em;
+          display: inline-block; }
+    .card__description__price {
+      font-size: 1.2em;
+      font-weight: 800; }
+
+.popular-food__card::before {
+  filter: blur(3rem);
+  opacity: 0.9;
+  bottom: 1em;
+  width: 50%;
+  height: 50%; }
+
+.popular-food__card .card__icon-heart,
+.popular-food__card .card__icon-near_me {
+  font-size: 0.8em; }
+
+.popular-food__card .card__description {
+  font-size: 0.8em; }
+
+.best-food__card::before {
+  filter: blur(4rem);
+  opacity: 0.6;
+  bottom: 1em;
+  width: 60%;
+  height: 60%; }
+
+.what-to-eat {
+  padding-bottom: 0; }
+  .what-to-eat .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+    .what-to-eat .header__headline {
+      font-size: 1em; }
+    .what-to-eat .header__notifications {
+      position: relative;
+      padding: 1em;
+      margin-right: 0.5em; }
+      .what-to-eat .header__notifications__icon-bell {
+        color: #2d2d2d;
+        font-size: 1.5em; }
+  .what-to-eat .search {
+    position: relative;
+    border-bottom: 2px solid white; }
+    .what-to-eat .search__input {
+      width: 100%;
+      background-color: #fafafa;
+      border-radius: 0.5rem;
+      border: 1px solid #cccccc;
+      padding: 1em 3.5em;
+      font-size: 1em; }
+      .what-to-eat .search__input::placeholder {
+        color: #bbbbbb; }
+    .what-to-eat .search__icon-search, .what-to-eat .search__filter {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .what-to-eat .search__icon-search {
+      font-size: 1.5em;
+      left: 0.5em; }
+    .what-to-eat .search__filter {
+      padding: 0.5em;
+      right: 1em; }
+      .what-to-eat .search__filter__icon-menu {
+        font-size: 1.5em; }
+  .what-to-eat .categories {
+    margin: 0 -1em; }
+    .what-to-eat .categories__list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto; }
+      .what-to-eat .categories__list__item {
+        display: inline-block;
+        flex: 0 0 auto;
+        padding: 1em; }
+    .what-to-eat .categories__btn {
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+    .what-to-eat .categories__card {
+      padding: 0.5em;
+      width: 3.5em;
+      height: 3.5em;
+      display: flex;
+      align-items: center; }
+    .what-to-eat .categories__icon {
+      width: 80%;
+      height: 80%; }
+    .what-to-eat .categories__name {
+      color: #2d2d2d;
+      font-weight: 600;
+      padding-top: 0.75em; }
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1em;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center; }
+  .bottom-bar__icon {
+    font-size: 1.5em;
+    color: #2d2d2d;
+    padding: 1em; }
+    .bottom-bar__icon.active {
+      color: #fc4041; }

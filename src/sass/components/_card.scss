@@ -1,0 +1,125 @@
+.card {
+  border-radius: 0.5rem;
+  background-color: white;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: $color-primary;
+    filter: blur(1.5rem);
+    opacity: 0.9;
+    z-index: -1;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__icon-heart,
+  &__icon-near_me {
+    position: absolute;
+    top: 0.3em;
+    right: 0.3em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5em;
+    box-shadow: 0 0.25em 0.25em rgba(252, 65, 64, 0.15);
+  }
+
+  &__image {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 10em;
+    object-fit: cover;
+  }
+
+  &__description {
+    padding: 0.5em;
+    position: relative;
+
+    &__title {
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    &__producer {
+      font-size: 0.8em;
+      color: $color-grey-light;
+      line-height: 1;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.8em;
+    }
+
+    &__ratings {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__result,
+      &__count {
+        color: $color-grey-light;
+      }
+      &__stars {
+        font-size: 0.9em;
+        margin: 0 0.5em;
+        &__icon {
+          width: 0.8em;
+          display: inline-block;
+        }
+      }
+    }
+    &__price {
+      font-size: 1.2em;
+      font-weight: 800;
+    }
+  }
+}
+
+.popular-food__card {
+  &::before {
+    filter: blur(3rem);
+    opacity: 0.9;
+    bottom: 1em;
+    width: 50%;
+    height: 50%;
+  }
+
+  & .card__icon-heart,
+  & .card__icon-near_me {
+    font-size: 0.8em;
+  }
+  & .card__icon-near_me {
+  }
+  & .card__description {
+    font-size: 0.8em;
+  }
+}
+
+.best-food__card {
+  &::before {
+    filter: blur(4rem);
+    opacity: 0.6;
+    bottom: 1em;
+    width: 60%;
+    height: 60%;
+  }
+
+  // & .card__icon-heart,
+  // & .card__icon-near_me {
+  //   font-size: 0.8em;
+  // }
+  // & .card__icon-near_me {
+  // }
+  // & .card__description {
+  //   font-size: 0.8em;
+  // }
+}

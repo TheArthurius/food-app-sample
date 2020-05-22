@@ -1,0 +1,28 @@
+section {
+  padding: 1em;
+}
+
+.section-title {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+}
+
+.popular-food {
+  &__wrapper {
+    margin: 0 -1em;
+    padding: 0 0.5em;
+    display: flex;
+  }
+
+  &__card {
+    margin: 0 0.5em;
+    flex: 1;
+  }
+}
+
+.best-food {
+  &__card {
+    margin-bottom: 2em;
+  }
+}

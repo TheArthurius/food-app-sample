@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="what-to-eat">
+      <header class="header">
+        <h1 class="header__headline">What would you like to eat?</h1>
+        <button class="header__notifications btn">
+          <span class="header__notifications__icon-bell icon-bell"></span>
+          <span class="header__notifications__badge badge">10</span>
+        </button>
+      </header>
+      <div class="search">
+        <span class="search__icon-search icon-search"></span>
+        <input
+          type="text"
+          placeholder="Find a food or Restaurant"
+          class="search__input"
+        />
+        <button class="search__filter btn">
+          <span class="search__filter__icon-menu icon-menu"></span>
+        </button>
+      </div>
+      <div class="categories">
+        <ul class="categories__list">
+          <li class="categories__list__item">
+            <button class="categories__btn btn">
+              <div class="categories__card card">
+                <svg class="categories__icon">
+                  <use xlink:href="assets/foods.svg#tuna" />
+                </svg>
+              </div>
+              <span class="categories__name">Sushi</span>
+            </button>
+          </li>
+          <li class="categories__list__item">
+            <button class="categories__btn btn">
+              <div class="categories__card card">
+                <svg class="categories__icon">
+                  <use xlink:href="assets/foods.svg#fast-food" />
+                </svg>
+              </div>
+              <span class="categories__name">Fastfood</span>
+            </button>
+          </li>
+          <li class="categories__list__item">
+            <button class="categories__btn btn">
+              <div class="categories__card card">
+                <svg class="categories__icon">
+                  <use xlink:href="assets/foods.svg#fruit" />
+                </svg>
+              </div>
+              <span class="categories__name">Fruits</span>
+            </button>
+          </li>
+          <li class="categories__list__item">
+            <button class="categories__btn btn">
+              <div class="categories__card card">
+                <svg class="categories__icon">
+                  <use xlink:href="assets/foods.svg#meat" />
+                </svg>
+              </div>
+              <span class="categories__name">Proteins</span>
+            </button>
+          </li>
+          <li class="categories__list__item">
+            <button class="categories__btn btn">
+              <div class="categories__card card">
+                <svg class="categories__icon">
+                  <use xlink:href="assets/foods.svg#ice-cream" />
+                </svg>
+              </div>
+              <span class="categories__name">Ice Cream</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="popular-food">
+      <h1 class="section-title">Popular food</h1>
+
+      <div class="popular-food__wrapper">
+        <div class="card popular-food__card">
+          <span class="card__icon-heart icon-heart"></span>
+          <img class="card__image" src="assets/img/grilled-salmon.jpg" alt="" />
+          <div class="card__description">
+            <span class="card__icon-near_me icon-near_me"></span>
+            <p class="cadr__description__title">Grilled salmon</p>
+            <div class="card__description__info">
+              <div class="card__description__ratings">
+                <span class="card__description__ratings__result">4.9</span>
+                <div class="card__description__ratings__stars">
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star grey"
+                  ></span>
+                </div>
+                <span class="card__description__ratings__count">(289)</span>
+              </div>
+              <div class="card__description__price">
+                <span class="card__description__price__curency">$</span>
+                <span class="card__description__price__amount">96</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card popular-food__card">
+          <span class="card__icon-heart icon-heart"></span>
+          <img class="card__image" src="assets/img/pasta-with-ham.jpg" alt="" />
+          <div class="card__description">
+            <span class="card__icon-near_me icon-near_me"></span>
+            <p class="cadr__description__title">Pasta with ham</p>
+            <div class="card__description__info">
+              <div class="card__description__ratings">
+                <span class="card__description__ratings__result">4.9</span>
+                <div class="card__description__ratings__stars">
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star"
+                  ></span>
+                  <span
+                    class="card__description__ratings__stars__icon icon-star grey"
+                  ></span>
+                </div>
+                <span class="card__description__ratings__count">(142)</span>
+              </div>
+              <div class="card__description__price">
+                <span class="card__description__price__curency">$</span>
+                <span class="card__description__price__amount">70</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-food">
+      <h1 class="section-title">Best food</h1>
+
+      <div class="card best-food__card">
+        <span class="card__icon-heart icon-heart"></span>
+        <img
+          class="card__image"
+          src="assets/img/salad-with-chicken.jpg"
+          alt=""
+        />
+        <div class="card__description">
+          <span class="card__icon-near_me icon-near_me"></span>
+          <p class="cadr__description__title">Salad with chicken</p>
+          <span class="card__description__producer">by Pizza hut</span>
+          <div class="card__description__info">
+            <div class="card__description__ratings">
+              <span class="card__description__ratings__result">4.9</span>
+              <div class="card__description__ratings__stars">
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star grey"
+                ></span>
+              </div>
+              <span class="card__description__ratings__count">(157)</span>
+            </div>
+            <div class="card__description__price">
+              <span class="card__description__price__curency">$</span>
+              <span class="card__description__price__amount">76</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card best-food__card">
+        <span class="card__icon-heart icon-heart"></span>
+        <img class="card__image" src="assets/img/steak.jpg" alt="" />
+        <div class="card__description">
+          <span class="card__icon-near_me icon-near_me"></span>
+          <p class="cadr__description__title">Steak</p>
+          <span class="card__description__producer">by Jimmy</span>
+          <div class="card__description__info">
+            <div class="card__description__ratings">
+              <span class="card__description__ratings__result">4.5</span>
+              <div class="card__description__ratings__stars">
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star"
+                ></span>
+                <span
+                  class="card__description__ratings__stars__icon icon-star grey"
+                ></span>
+              </div>
+              <span class="card__description__ratings__count">(268)</span>
+            </div>
+            <div class="card__description__price">
+              <span class="card__description__price__curency">$</span>
+              <span class="card__description__price__amount">89</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="bottom-bar">
+      <span class="bottom-bar__icon active icon-home"></span>
+      <span class="bottom-bar__icon icon-crosshair"></span>
+      <span class="bottom-bar__icon icon-shopping-bag"></span>
+      <span class="bottom-bar__icon icon-user"></span>
+    </aside>
+  </body>
+</html>

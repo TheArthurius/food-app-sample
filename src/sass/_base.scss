@@ -1,0 +1,59 @@
+$color-primary: #fc4041;
+$color-light: #fafafa;
+$color-secondary: #f2f2f2;
+$color-grey: #2d2d2d;
+$color-grey-light: #bbbbbb;
+
+$padding: 1em;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: $color-grey;
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1.5;
+  background-color: $color-light;
+  -webkit-font-smoothing: subpixel-antialiased;
+  width: 100%;
+}
+
+// LINKS
+a {
+  color: $color-primary;
+  font-weight: 300;
+  line-height: 1;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-family: "Nunito", sans-serif;
+}

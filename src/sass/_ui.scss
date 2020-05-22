@@ -1,0 +1,19 @@
+.badge {
+  font-size: 0.6em;
+  line-height: 1;
+  text-align: center;
+  padding: 0.5em;
+  background-color: $color-primary;
+  border-radius: 1.5rem;
+  color: $color-light;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
